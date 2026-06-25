@@ -1,4 +1,4 @@
-# Foodie Map 隱私權政策
+# ChewsDay 吃貨日 隱私權政策
 
 最後更新：2026-06-22
 
@@ -37,4 +37,4 @@
 
 ## 6. 聯絡我們
 
-有任何隱私問題，請來信：hello@<app-domain>
+有任何隱私問題，請來信：chewsday.support@gmail.com
