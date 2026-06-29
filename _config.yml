@@ -1,0 +1,11 @@
+title: "ChewsDay 吃貨日"
+description: "法律文件"
+url: "https://chews-day.github.io"
+baseurl: "/legal"
+lang: zh-TW
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
