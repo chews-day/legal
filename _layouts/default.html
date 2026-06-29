@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }} — ChewsDay 吃貨日</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a href="{{ '/' | relative_url }}" class="site-logo">
+        <span class="logo-icon">🍽</span>
+        <span class="logo-text">ChewsDay <span class="logo-zh">吃貨日</span></span>
+      </a>
+      <nav class="site-nav">
+        <a href="{{ '/privacy-policy' | relative_url }}" class="nav-link {% if page.url contains 'privacy' %}active{% endif %}">隱私權政策</a>
+        <a href="{{ '/terms-of-service' | relative_url }}" class="nav-link {% if page.url contains 'terms' %}active{% endif %}">服務條款</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="site-main">
+    <div class="container">
+      {% if page.url != "/" and page.url != "/index.html" %}
+      <div class="doc-meta">
+        最後更新：{{ page.updated | default: "2026-06-29" }}
+      </div>
+      {% endif %}
+      <article class="content">
+        {{ content }}
+      </article>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2026 ChewsDay 吃貨日．如有疑問請聯絡 <a href="mailto:chewsday.support@gmail.com">chewsday.support@gmail.com</a></p>
+    </div>
+  </footer>
+</body>
+</html>
