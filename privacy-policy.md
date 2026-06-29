@@ -1,3 +1,8 @@
+---
+layout: default
+title: 隱私權政策
+---
+
 # ChewsDay 吃貨日 隱私權政策
 
 **最後更新：2026-06-29**
